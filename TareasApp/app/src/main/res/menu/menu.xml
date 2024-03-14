@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_item1"
+            android:title="Todas las tareas" />
+        <item
+            android:id="@+id/menu_item2"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/menu_item3"
+            android:title="Cerrar Sesión" />
+    </group>
+
+</menu>
+
+

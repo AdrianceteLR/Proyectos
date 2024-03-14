@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634142408865",
+    "project_id": "tareasapp-52e10",
+    "storage_bucket": "tareasapp-52e10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634142408865:android:e46e4258b4b4124da630e0",
+        "android_client_info": {
+          "package_name": "com.example.tareasapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-f8q1l_s5Qyqm8eMtECuRzTyuX98o444"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

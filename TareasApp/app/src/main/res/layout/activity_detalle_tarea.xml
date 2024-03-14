@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalleTareaActivity">
+
+    <LinearLayout
+        android:id="@+id/linearCabecera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/volver"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15pt"
+            android:textStyle="bold"
+            android:hint="Titulo"/>
+
+        <TextView
+            android:id="@+id/separador1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="_____________________________________________"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/descripcionTextView"
+            android:layout_width="375dp"
+            android:layout_height="288dp"
+            android:layout_marginTop="10dp"
+            android:hint="Descripcion de Tarea"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/separador2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="_____________________________________________"
+            android:textSize="8pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/grupoTextView"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:textSize="14pt"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:hint="Grupo de la Tarea" />
+
+        <TextView
+            android:id="@+id/separador3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="_____________________________________________"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/fechaTextView"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="14pt"
+            android:textStyle="bold"
+            android:hint="Fecha de la Tarea" />
+
+    </LinearLayout>
+
+</LinearLayout>
