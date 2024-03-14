@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondopantalla"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1º Movientos:"
+            android:textSize="10pt"
+            android:textColor="#CDCDCB"
+            android:textStyle="bold"
+            android:background="#F7757368"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cada turno será de un solo movimiento.\nEmpezará siempre el ratón y solo se podrá mover de una casilla en una.\nSolo se podrá mover un gato y se podrá mover de una casilla en una."
+            android:textSize="8pt"
+            android:textColor="#CDCDCB"
+            android:background="#F7757368"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2º El Ratón:"
+            android:textSize="10pt"
+            android:textColor="#CDCDCB"
+            android:textStyle="bold"
+            android:background="#F7757368"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es 1 ratón y puede ir hacia delante o hacia atrás, su misión es llegar al otro extremo abriendo la barrera de los gatos."
+            android:textSize="8pt"
+            android:textColor="#CDCDCB"
+            android:background="#F7757368"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3º El Gato:"
+            android:textSize="10pt"
+            android:textColor="#CDCDCB"
+            android:textStyle="bold"
+            android:background="#F7757368"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Son 4 gatos y su moviento es solo hacia delante y su misión es conseguir atrapar al gato dejandolo sin movimientos."
+            android:textSize="8pt"
+            android:textColor="#CDCDCB"
+            android:background="#F7757368"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4º Resultado:"
+            android:textSize="10pt"
+            android:textColor="#CDCDCB"
+            android:textStyle="bold"
+            android:background="#F7757368"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si el ratón consigue cruzar la barrera de los gatos, él será el ganador.\nSi los gatos consiguen atrapar al ratón ellos serán los ganadores."
+            android:textSize="8pt"
+            android:textColor="#CDCDCB"
+            android:background="#F7757368"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSalirInstrucciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Volver"
+        android:backgroundTint="#D3494841"
+        android:textSize="18pt"
+        android:textStyle="bold"/>
+</LinearLayout>

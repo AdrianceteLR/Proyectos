@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopantalla"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSalirJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Salir"
+        android:textSize="10pt"
+        android:backgroundTint="#D3494841"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/marcadorRaton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="145dp"
+        android:layout_gravity="right"
+        android:text="Ratón: 0"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#D3F8F8F6"/>
+
+    <TextView
+        android:id="@+id/marcadorGato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_gravity="right"
+        android:text="|  Gato: 0"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textColor="#D3F8F8F6"/>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="150dp"
+        android:columnCount="8"
+        android:rowCount="8">
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="10pt"
+        android:backgroundTint="#D3494841"
+        android:textStyle="bold"/>
+
+</FrameLayout>
