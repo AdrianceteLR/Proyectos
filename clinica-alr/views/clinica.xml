@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!--Vistas-->
+    <record id="citas_view_tree" model="ir.ui.view">
+        <field name="name">citas.view.tree</field>
+        <field name="model">clinica.citas</field>
+        <field name="arch" type="xml">
+            <tree string="Citas Tree">
+                <field name="fecha" />
+                <field name="paciente_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="citas_view_form" model="ir.ui.view">
+        <field name="name">citas.view.form</field>
+        <field name="model">clinica.citas</field>
+        <field name="arch" type="xml">
+            <form string="Citas Form">
+                <sheet>
+                    <group colspan="2" col="2">
+                        <field name="name" />
+                        <field name="fecha" />
+                        <field name="paciente_id">
+                            <tree>
+                                <field name="name" />
+                                <field name="fechaNacimiento" />
+                                <field name="edad" />
+                                <field name="numEnfermedades" />
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="pacientes_view_tree" model="ir.ui.view">
+        <field name="name">pacientes.view.tree</field>
+        <field name="model">clinica.pacientes</field>
+        <field name="arch" type="xml">
+            <tree string="Pacientes Tree">
+                <field name="name" />
+                <field name="edad" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="pacientes_view_form" model="ir.ui.view">
+        <field name="name">pacientes.view.form</field>
+        <field name="model">clinica.pacientes</field>
+        <field name="arch" type="xml">
+            <form string="Pacientes Form">
+                <sheet>
+                    <group colspan="2" col="2">
+                        <field name="name" />
+                        <field name="fechaNacimiento" />
+                        <field name="edad" />
+                        <field name="numEnfermedades" />
+                        <field name="enfermedades_ids">
+                            <tree>
+                                <field name="name" />
+                            </tree>
+                        </field>
+                        <field name="citas_ids">
+                            <tree>
+                                <field name="name" />
+                                <field name="fecha" />
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="pacientes_view_search" model="ir.ui.view">
+        <field name="name">pacientes.view.search</field>
+        <field name="model">clinica.pacientes</field>
+        <field name="arch" type="xml">
+            <search>
+                 <filter string="Mayores de 18 años" name="mayoresEdad" domain="[('edad', '>', 18)]"/>
+            </search>
+        </field>
+    </record>
+
+    <!--Acciones-->
+    <record id="citas_action" model="ir.actions.act_window">
+        <field name="name">Action Citas</field>
+        <field name="res_model">clinica.citas</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="pacientes_action" model="ir.actions.act_window">
+        <field name="name">Action Pacientes</field>
+        <field name="res_model">clinica.pacientes</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="enfermedades_action" model="ir.actions.act_window">
+        <field name="name">Action Enfermedades</field>
+        <field name="res_model">clinica.enfermedades</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--Menus-->
+    <menuitem id="main_clinica_menu" name="MenuClinica" groups="grupo_doctor,grupo_gestor"/>
+    <menuitem id="citas_menu" name="MenuCitas" action="citas_action" parent="main_clinica_menu" groups="grupo_doctor,grupo_gestor"/>
+    <menuitem id="pacientes_menu" name="MenuPacientes" action="pacientes_action" parent="main_clinica_menu" groups="grupo_doctor,grupo_gestor"/>
+    <menuitem id="enfermedades_menu" name="MenuEnfermedades" action="enfermedades_action" parent="main_clinica_menu" groups="grupo_gestor"/>
+</odoo>

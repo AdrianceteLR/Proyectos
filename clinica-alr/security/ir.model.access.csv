@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+doctor_pacientes,Pacientes Doctor,model_clinica_pacientes,grupo_doctor,1,1,0,0
+doctor_citas,Citas Doctor,model_clinica_citas,grupo_doctor,1,0,0,0
+doctor_enfermedades,Enfermedades Doctor,model_clinica_enfermedades,grupo_doctor,1,0,0,0
+
+gestor_pacientes,Pacientes Gestor,model_clinica_pacientes,grupo_gestor,1,1,1,1
+gestor_citas,Citas Gestor,model_clinica_citas,grupo_gestor,1,1,1,1
+gestor_enfermedades,Enfermedades Gestor,model_clinica_enfermedades,grupo_gestor,1,1,1,1

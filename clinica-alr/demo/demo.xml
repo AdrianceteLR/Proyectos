@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <record id="enfermedad01" model="clinica.enfermedades">
+            <field name="name">Asma</field>
+        </record>
+        <record id="enfermedad02" model="clinica.enfermedades">
+            <field name="name">Gripe</field>
+        </record>
+        <record id="enfermedad03" model="clinica.enfermedades">
+            <field name="name">Diabetes</field>
+        </record>
+    </data>
+</odoo>
